@@ -8,18 +8,17 @@
     <title>Learning GSAP with Sheryians Coding School</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="overflow-x-hidden">
-    <div id="page1" class="h-full w-full bg-blue-400">
-      <h1 class="text-5xl font-bold">Experiences</h1>
+  <body>
+    <div id="string" class="h-[200px] w-full border border-white">
+      <svg width="500" height="200">
+        <path
+          d="M 10 100 Q 250 100 490 100"
+          stroke="white"
+          fill="transparent"
+        />
+      </svg>
     </div>
-    <div id="page2" class="h-full w-full bg-lime-200">
-      <h1 class="text-[35vw] uppercase text-black font-semibold">
-        Experiences
-      </h1>
-    </div>
-    <div id="page3" class="h-full w-full bg-red-500">
-      <h1 class="text-5xl font-bold">Experiences</h1>
-    </div>
+
     <!-- gsap cdn -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
@@ -31,6 +30,13 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
       integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap draw svg -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/DrawSVGPlugin.min.js"
+      integrity="sha512-yOZoZc/D5ZPHwjBduLkgeGHhFlQ7CsslA5D1egpQgeV1QcV4OdCcwmRLkH7p/hEHHF1cJp3H2OpGpd7oELFGxg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
