@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcto — Minimal Carry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background: #f7f6f3;
+        color: #111;
+      }
+      h1,
+      h2,
+      h3,
+      .logo {
+        font-family: "Syne", sans-serif;
+      }
+      nav {
+        background: #f7f6f3;
+        border-bottom: 1px solid #e5e2db;
+      }
+      .card {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+      }
+      .btn-primary {
+        background: #111;
+        color: #fff;
+        transition: background 0.2s;
+      }
+      .btn-primary:hover {
+        background: #333;
+      }
+      .btn-secondary {
+        border: 1.5px solid #111;
+        color: #111;
+        transition:
+          background 0.2s,
+          color 0.2s;
+      }
+      .btn-secondary:hover {
+        background: #111;
+        color: #fff;
+      }
+      .tag {
+        background: #eae8e3;
+        color: #555;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+      }
+      .fade {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+      .fade.show {
+        opacity: 1;
+        transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="sticky top-0 z-50 px-6 py-4">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <span class="logo text-xl font-bold tracking-tight">Arcto</span>
+        <div class="hidden md:flex gap-8 text-sm text-gray-500">
+          <a href="#" class="hover:text-black transition-colors">Shop</a>
+          <a href="#" class="hover:text-black transition-colors">About</a>
+          <a href="#" class="hover:text-black transition-colors">Journal</a>
+        </div>
+        <button class="btn-primary text-sm px-5 py-2 rounded-full font-medium">
+          Get Yours
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="bg-[#111] text-white">
+      <div
+        class="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <span
+            class="inline-block bg-white/10 text-white/60 text-xs tracking-widest px-3 py-1 rounded-full mb-6"
+            >NEW SEASON DROP</span
+          >
+          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            Carry less.<br />Live more.
+          </h1>
+          <p class="text-white/60 text-lg leading-relaxed mb-8 max-w-md">
+            Arcto bags are built for the everyday — minimal design, maximum
+            function. Crafted from recycled materials, built to outlast trends.
+          </p>
+          <div class="flex gap-3 flex-wrap">
+            <button class="btn-primary px-7 py-3 rounded-full font-medium">
+              Shop Now
+            </button>
+            <button
+              class="border border-white/30 text-white/80 hover:bg-white/10 transition px-7 py-3 rounded-full text-sm font-medium"
+            >
+              See Story
+            </button>
+          </div>
+          <div class="flex gap-10 mt-12 pt-10 border-t border-white/10">
+            <div>
+              <p class="text-2xl font-bold">40k+</p>
+              <p class="text-white/50 text-sm mt-1">Happy customers</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold">100%</p>
+              <p class="text-white/50 text-sm mt-1">Recycled fabric</p>
+            </div>
+            <div>
+              <p class="text-2xl font-bold">5yr</p>
+              <p class="text-white/50 text-sm mt-1">Warranty</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero product image -->
+        <div class="flex justify-center">
+          <img
+            id="watch"
+            src="https://i.ibb.co.com/cSBBK8cc/photo-1705909237050-7a7625b47fac-removebg-preview.png"
+            alt="Arcto Hero Bag"
+            class="w-full max-w-md rounded-2xl object-contain absolute top-[300px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section id="description" class="py-24 px-6 bg-white">
+      <div
+        id="stop1"
+        class="w-5 h-5 bg-red-500 absolute top-[1100px] left-5 lg:left-1/2"
+      ></div>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div class="fade">
+          <span
+            class="tag px-3 py-1 rounded-full font-medium uppercase tracking-widest inline-block mb-5"
+            >Why Arcto</span
+          >
+          <h2 class="text-4xl font-bold leading-snug mb-6">
+            Designed to disappear<br />into your life.
+          </h2>
+          <p class="text-gray-500 leading-relaxed mb-5">
+            We obsess over the details you never think about — the zipper that
+            never snags, the strap that doesn't dig in, the pocket that fits
+            your water bottle perfectly.
+          </p>
+          <p class="text-gray-500 leading-relaxed mb-8">
+            Every Arcto bag is made from post-consumer recycled materials
+            without compromising durability or aesthetics. Good for you, better
+            for everything else.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <span class="tag px-4 py-2 rounded-full">♻ Recycled fabric</span>
+            <span class="tag px-4 py-2 rounded-full">🔒 Lockable zips</span>
+            <span class="tag px-4 py-2 rounded-full">💧 Waterproof</span>
+            <span class="tag px-4 py-2 rounded-full">5yr warranty</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 fade">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <div class="text-2xl mb-3">🎒</div>
+            <h3 class="font-semibold mb-2">Ergonomic</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Padded back panel and adjustable straps for all-day comfort.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <div class="text-2xl mb-3">🗂</div>
+            <h3 class="font-semibold mb-2">Organized</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              14 pockets. Laptop sleeve. Everything has a place.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <div class="text-2xl mb-3">🌍</div>
+            <h3 class="font-semibold mb-2">Sustainable</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Made from 100% recycled plastic bottles. Carbon neutral shipping.
+            </p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <div class="text-2xl mb-3">🛡</div>
+            <h3 class="font-semibold mb-2">Durable</h3>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Stress-tested to 15,000 open/close cycles. Built to last years.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="stop-here"></div>
+    <!-- PRODUCT CARDS -->
+    <section id="cards" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-14 fade">
+          <span
+            class="tag px-3 py-1 rounded-full font-medium uppercase tracking-widest inline-block mb-4"
+            >Collection</span
+          >
+          <h2 class="text-4xl font-bold">Find your bag.</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="card bg-white rounded-2xl overflow-hidden fade">
+            <div class="bg-gray-100 h-56">
+              <img
+                src="img/product-1.png"
+                alt="Day Pack 20L"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <span class="tag px-2 py-1 rounded text-xs mb-2 inline-block"
+                    >Everyday</span
+                  >
+                  <h3 class="font-bold text-lg">Day Pack 20L</h3>
+                </div>
+                <span class="font-bold text-lg">$89</span>
+              </div>
+              <p class="text-sm text-gray-500 mb-5">
+                Your go-to for work, commute, and weekend. Fits 15" laptop.
+              </p>
+              <div class="flex gap-2">
+                <button
+                  class="btn-primary flex-1 py-2.5 rounded-xl text-sm font-medium"
+                >
+                  Add to Cart
+                </button>
+                <button class="btn-secondary px-4 py-2.5 rounded-xl text-sm">
+                  ♡
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-white rounded-2xl overflow-hidden fade">
+            <div class="h-56 bg-white"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <span
+                    class="bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs mb-2 inline-block font-medium"
+                    >Best Seller</span
+                  >
+                  <h3 class="font-bold text-lg">Urban Pro 28L</h3>
+                </div>
+                <span class="font-bold text-lg">$129</span>
+              </div>
+              <p class="text-sm text-gray-500 mb-5">
+                Built for the serious commuter. Hidden pockets, padded laptop
+                zone.
+              </p>
+              <div class="flex gap-2">
+                <button
+                  class="btn-primary flex-1 py-2.5 rounded-xl text-sm font-medium"
+                >
+                  Add to Cart
+                </button>
+                <button class="btn-secondary px-4 py-2.5 rounded-xl text-sm">
+                  ♡
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-white rounded-2xl overflow-hidden fade">
+            <div class="h-56 bg-[#e8f0fe]">
+              <img
+                src="img/product-3.png"
+                alt="Trail 35L"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <div>
+                  <span
+                    class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs mb-2 inline-block font-medium"
+                    >New Arrival</span
+                  >
+                  <h3 class="font-bold text-lg">Trail 35L</h3>
+                </div>
+                <span class="font-bold text-lg">$149</span>
+              </div>
+              <p class="text-sm text-gray-500 mb-5">
+                Weekend trips and light hiking. Rain cover included, hip belt
+                support.
+              </p>
+              <div class="flex gap-2">
+                <button
+                  class="btn-primary flex-1 py-2.5 rounded-xl text-sm font-medium"
+                >
+                  Add to Cart
+                </button>
+                <button class="btn-secondary px-4 py-2.5 rounded-xl text-sm">
+                  ♡
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-10 fade">
+          <button
+            class="btn-secondary px-10 py-3 rounded-full text-sm font-medium"
+          >
+            View All Products
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-100 py-10 px-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400"
+      >
+        <span class="logo font-bold text-black text-lg">Arcto</span>
+        <p>© 2024 Arcto. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-black transition-colors">Privacy</a>
+          <a href="#" class="hover:text-black transition-colors">Terms</a>
+          <a href="#" class="hover:text-black transition-colors">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const obs = new IntersectionObserver(
+        (entries) =>
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("show");
+          }),
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".fade").forEach((el) => obs.observe(el));
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
