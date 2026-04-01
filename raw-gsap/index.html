@@ -3,40 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Learning GSAP with Sheryians Coding School</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Explore gsap</title>
   </head>
-  <body>
-    <div id="string" class="h-[200px] w-full border border-white">
-      <svg width="500" height="200">
-        <path
-          d="M 10 100 Q 250 100 490 100"
-          stroke="white"
-          fill="transparent"
-        />
-      </svg>
+  <body class="p-2 h-[5000px] space-y-2 relative">
+    <div id="one" class="w-full h-125 border-2 border-black">
+      first div
+
+      <div
+        id="box"
+        class="w-25 h-25 rounded-lg bg-blue-500 absolute right-[95%] top-0"
+      ></div>
+    </div>
+    <div id="two" class="w-full h-125 border-2 border-red-600">second div</div>
+    <div id="three" class="w-full h-125 border-2 border-blue-600">
+      third div
     </div>
 
-    <!-- gsap cdn -->
+    <!-- gsap -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- gsap scroll trigger -->
+    <!-- scroll triger -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
       integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- gsap draw svg -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/DrawSVGPlugin.min.js"
-      integrity="sha512-yOZoZc/D5ZPHwjBduLkgeGHhFlQ7CsslA5D1egpQgeV1QcV4OdCcwmRLkH7p/hEHHF1cJp3H2OpGpd7oELFGxg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>

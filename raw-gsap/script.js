@@ -1,25 +1,31 @@
-let initialPath = `M 10 100 Q 250 100 490 100`;
-let finalPath = `M 10 150 Q 250 200 490 100`;
-
-const string = document.getElementById("string");
-
-string.addEventListener("mousemove", (dets) => {
-  let path = `M 10 100 Q ${dets.x} ${dets.y} 490 100`;
-  gsap.to("svg path", {
-    attr: {
-      d: path,
-    },
-    duration: 0.3,
-    ease: "power3.out",
-  });
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#two",
+    // markers: true,
+    scrub: 1,
+    start: "top 54%",
+    end: "top 20%",
+  },
 });
-string.addEventListener("mouseleave", () => {
-  gsap.to("svg path", {
-    attr: {
-      d: initialPath,
-    },
-    duration: 0.8,
-    ease: "elastic.out(1,0.2)",
-  });
+
+tl.to("#box", {
+  top: "900px",
+  right: 0,
+  borderRadius: "100%",
 });
-string.addEventListener("mouseleave", (e) => {});
+
+let tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#three",
+    markers: true,
+    start: "top 60%",
+    end: "top 20%",
+    scrub: 1,
+  },
+});
+
+tl2.to("#box", {
+  top: "1400px",
+  right: "95%",
+  borderRadius: "18px",
+});
